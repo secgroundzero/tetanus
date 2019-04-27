@@ -1,11 +1,13 @@
 # Tetanus
 
-Helper script for mangling CS payloads
+Helper script for mangling CS payloads to create a macro.
 
 
-## Credits:
+## Disclaimer
 
-*This is not my own research and it is merely the weaponization of various techniques i have found online.I assume no responsibility for the misuse of this script* 
+*This is not my own research and it is merely the weaponization of various techniques i have found online.I assume no responsibility for any misuse of this script* 
+
+## Credits
 
 Full credit goes to [Carlos Perez](https://twitter.com/Carlos_Perez) for his [ASR Rules](https://gist.github.com/infosecn1nja/24a733c5b3f0e5a8b6f0ca2cf75967e3) and the [Walmart Labs team](https://twitter.com/OrOneEqualsOne) for the [techniques](https://medium.com/walmartlabs/evasive-vba-advanced-maldoc-techniques-1365e9373f80) used in the tool.
 
@@ -26,7 +28,3 @@ Copy the output macro to a Microsoft Word/Excel document and save it. I have als
 
 You will need to have both [PowerShell/pwsh](https://github.com/PowerShell/PowerShell) and [Invoke-Obfuscation](https://github.com/danielbohannon/Invoke-Obfuscation)
 for the script to work.
-
-
-
-
