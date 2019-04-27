@@ -13,7 +13,7 @@ Full credit goes to [Carlos Perez](https://twitter.com/Carlos_Perez) for his [AS
 
 ## Background stuff
 
-The Macro is executed via WMI is order to bypass the AMSI scan engine. In addition the script runs the payload.ps1 file through Invoke-Obfuscation to add another level of confusion either to AV vendor or analysts. The default commands used in Invoke-Obfuscation are TOKEN/ALL/1,COMPRESS/1 which is hardcoded in the script. The resulting code is then Base64 encoded and the strings are reversed. Finally all variables in the script are randomly generated every time the script is executed to avoid at least static signatures.
+The Macro is executed via WMI is order to bypass the AMSI scan engine. In addition the script runs the payload.ps1 file through Invoke-Obfuscation to add another level of confusion either to AV vendor or analysts. The default commands used in Invoke-Obfuscation are TOKEN\ALL\1,COMPRESS\1 which is hardcoded in the script. The resulting code is then Base64 encoded and the strings are reversed. Finally all variables in the script are randomly generated every time the script is executed to avoid at least static signatures.
 
 
 ## Usage:
