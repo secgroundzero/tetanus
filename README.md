@@ -1,11 +1,11 @@
 # Tetanus
 
-Helper script for mangling CS payloads to create a macro.
+Helper script for mangling CS payloads through various methods to create a macro to bypass AV vendors.
 
 
-## Disclaimer
+## Disclaimer - Read!
 
-*This is not my own research and it is merely the weaponization of various techniques i have found online.I assume no responsibility for any misuse of this script* 
+*This is not my own research, it is merely the combination and weaponization of various techniques i have found online.I assume no responsibility for any misuse of this tool* 
 
 ## Credits
 
@@ -13,7 +13,7 @@ Full credit goes to [Carlos Perez](https://twitter.com/Carlos_Perez) for his [AS
 
 ## Background stuff
 
-The Macro is executed via WMI is order to bypass the AMSI scan engine. In addition the script runs the payload.ps1 file through Invoke-Obfuscation to add another level of confusion either to AV vendor or analysts. The default commands used in Invoke-Obfuscation are TOKEN\ALL\1,COMPRESS\1 which is hardcoded in the script. The resulting code is then Base64 encoded and the strings are reversed. Finally all variables in the script are randomly generated every time the script is executed to avoid at least static signatures.
+The Macro is executed via WMI is order to bypass the AMSI scan engine. In addition the script runs the payload.ps1 file through Invoke-Obfuscation for evading AV. The default commands used in Invoke-Obfuscation are TOKEN\ALL\1,COMPRESS\1 which is hardcoded in the script. The resulting code is then Base64 encoded and the strings are reversed. Finally all variables in the script are randomly generated every time the script is executed to avoid at least static signatures.
 
 
 ## Usage:
@@ -28,3 +28,7 @@ Copy the output macro to a Microsoft Word/Excel document and save it. I have als
 
 You will need to have both [PowerShell/pwsh](https://github.com/PowerShell/PowerShell) and [Invoke-Obfuscation](https://github.com/danielbohannon/Invoke-Obfuscation)
 for the script to work.
+
+## Developers
+
+The tool was developed by [SecGroundZero](https://twitter.com/sec_groundzero) and [Stella](https://twitter.com/stellaconstanti)
